@@ -1,14 +1,16 @@
 import React from "react";
 import ColorBox from "./components/ColorBox";
-import ColorContext from "./contexts/color";
+import { ColorProvider } from "./contexts/color";
+import SelectColors from "./components/SelectColors";
 
 const App = () => {
   return (
-    <ColorContext.Provider value={{ color: 'red' }}> {/* value를 설정하지 않으면 오류가 난다. */}
+    <ColorProvider>
       <div>
+        <SelectColors />
         <ColorBox />
       </div>
-    </ColorContext.Provider>
+    </ColorProvider>
   );
 };
 

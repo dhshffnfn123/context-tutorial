@@ -4,7 +4,7 @@
 > * 새 Context를 만들 때는 createContext 함수를 사용하며, 파라미터에는 기본 상태를 지정한다.
 
 ## Consumer
-> + Consumer 사이에 중괄호를 열어서 그 안에 함수를 넣어 주는 패턴을 Funtion as a child, 혹은 Render Props라고 한다.
+> + Consumer 사이에 중괄호를 열어서 그 안에 함수를 넣어 주는 패턴을 Function as a child, 혹은 Render Props라고 한다.
 > - 컴포넌트의 children이 있어야 할 자리에 일반 JSX 혹은 문자열이 아닌 함수를 전달하는 것이다.
 > * color.js와 ColorBox.js 참고
 
